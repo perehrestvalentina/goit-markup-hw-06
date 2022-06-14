@@ -802,10 +802,12 @@ section {
   transform: translate(-50%, -50%) scale(0);
 }
 
+/*-------------------------MODAL-----------------------*/
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
+  padding: 40PX;
 
   min-height: 581px;
   width: 528px;
@@ -814,6 +816,36 @@ section {
   border-radius: 4px;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 300ms;
+}
+
+.modal-title {
+  width: 448px;
+  height: 23px;
+  margin-bottom: 30px;
+
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+
+  color: #212121;
+}
+
+.modal-input {
+  width: 448px;
+  height: 40px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-bottom: 28px;
+  padding-left: 15px;
+  color: #757575;
+}
+
+.modal-input::placeholder {
+  font-size: 12px;
+  line-height: 1.16;
+
+  color: #757575;
 }
 
 .modal-close-btn {
