@@ -823,6 +823,7 @@ section {
   height: 23px;
   margin-bottom: 30px;
 
+  font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
@@ -836,7 +837,7 @@ section {
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  margin-bottom: 28px;
+  margin-bottom: 10px;
   padding-left: 15px;
   color: #757575;
 }
@@ -847,6 +848,50 @@ section {
 
   color: #757575;
 }
+
+.modal-input:hover,
+.modal-input:focus {
+  border: 1px solid #2196F3;
+  border-radius: 4px;
+}
+
+
+.modal-label {
+  font-size: 12px;
+  line-height: 1.16;
+
+  color: #757575;
+}
+
+.modal-text {
+  width: 448px;
+  height: 120px;
+
+  padding: 12px 16px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  resize: none;
+}
+
+.modal-text::placeholder {
+  font-size: 12px;
+  line-height: 1.16;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.user-checkbox {
+  width: 400.62px;
+  height: 24px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+
+  color: #757575;
+}
+
+
 
 .modal-close-btn {
   width: 30px;
