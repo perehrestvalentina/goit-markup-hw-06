@@ -837,9 +837,23 @@ section {
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  margin-bottom: 10px;
-  padding-left: 15px;
+  padding-left: 40px;
   color: #757575;
+}
+
+.modal-field {
+  margin-bottom: 10px;
+}
+
+.input-wrap {
+  position: relative;
+}
+
+.modal-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .modal-input::placeholder {
@@ -859,8 +873,9 @@ section {
 .modal-label {
   font-size: 12px;
   line-height: 1.16;
-
+  margin-bottom: 4px;
   color: #757575;
+  display: flex;
 }
 
 .modal-text {
