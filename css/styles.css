@@ -401,9 +401,6 @@ section {
   color: var(--second-title-color);
 }
 
-
-/*------------------------------------ABOUT TEAM-----------------*/
-
 .about-list {
   display: flex;
   margin-left: -30px;
@@ -658,7 +655,6 @@ section {
   color: var(--third-title-color);
 }
 
-/*---------------------------------------------------*/
 
 .work-box {
   position: relative;
@@ -839,11 +835,14 @@ section {
   border-radius: 4px;
   padding-left: 40px;
   color: #757575;
+  outline: none;
 }
 
 .modal-field {
   margin-bottom: 10px;
+
 }
+
 
 .input-wrap {
   position: relative;
@@ -866,9 +865,7 @@ section {
 .modal-input:hover,
 .modal-input:focus {
   border: 1px solid #2196F3;
-  border-radius: 4px;
 }
-
 
 .modal-label {
   font-size: 12px;
@@ -887,6 +884,7 @@ section {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   resize: none;
+  outline: none;
 }
 
 .modal-text::placeholder {
@@ -894,19 +892,6 @@ section {
   line-height: 1.16;
   color: rgba(117, 117, 117, 0.5);
 }
-
-.user-checkbox {
-  width: 400.62px;
-  height: 24px;
-
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-
-  color: #757575;
-}
-
-
 
 .modal-close-btn {
   width: 30px;
@@ -922,7 +907,14 @@ section {
   align-items: center;
   justify-content: center;
   padding: 0;
+
 }
+
+.close-icon:hover,
+.close-icon:focus {
+  fill: #2196f3;
+}
+
 
 .is-hidden {
   opacity: 0;
@@ -932,4 +924,70 @@ section {
 
 .no-scroll {
   overflow: hidden;
+}
+
+.check-text {
+  font-size: 14px;
+  color: #757575;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.check-text::before {
+  content: " ";
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+
+.modal-check:checked+.check-text::before {
+  background-color: #2196f3;
+  background-image: url(../images/check.svg);
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.modal-check:focus+.check-text::before {
+  border-color: #212121;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.btn-submit {
+  width: 200px;
+  height: 50px;
+  position: absolute;
+  top: 490px;
+  left: 165px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  padding: 10px 55px;
+
+  align-items: center;
+  color: #FFFFFF;
+  text-align: center;
+  justify-content: center;
+  background: #188CE8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
