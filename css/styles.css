@@ -99,7 +99,6 @@ section {
   color: var(--accente-color);
 }
 
-
 /*------------------------------------HEADER--------------------*/
 .header {
   border-bottom: 1px solid #ececec;
@@ -113,7 +112,6 @@ section {
 .header-nav {
   display: flex;
 }
-
 
 .header-logo {
   display: flex;
@@ -146,7 +144,6 @@ section {
   display: flex;
   margin-left: auto;
   align-items: center;
-
 }
 
 .header-contact .header-contacts-item+.header-contacts-item {
@@ -185,7 +182,6 @@ section {
 
 .header-contacts-item {
   display: flex;
-
 }
 
 .header-icon:hover,
@@ -229,7 +225,6 @@ section {
   border-radius: 2px;
   left: 0;
   bottom: 0;
-
 }
 
 /*------------------------------------HERO--------------------*/
@@ -246,13 +241,11 @@ section {
   text-align: center;
 }
 
-
 .section-list {
   display: flex;
   margin-bottom: 50px;
   justify-content: center;
 }
-
 
 .hero-item::before {
   display: block;
@@ -262,7 +255,6 @@ section {
   background-repeat: no-repeat;
   background-position: center;
   background-color: #F5F4FA;
-
 }
 
 .icon-anntena::before {
@@ -284,8 +276,6 @@ section {
   background-image: url("../images/astronaut.svg");
   margin-bottom: 30px;
 }
-
-
 
 .btn-item:not(:last-child) {
   margin-right: 9px;
@@ -395,7 +385,6 @@ section {
 }
 
 /*------------------------------------ABOUT--------------------*/
-
 .about-title {
   margin-bottom: 50px;
   text-align: center;
@@ -408,7 +397,6 @@ section {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-
 }
 
 .section-work {
@@ -590,7 +578,6 @@ section {
   transform: translateY(0);
 }
 
-
 .projects-top-wrap {
   position: relative;
   overflow: hidden;
@@ -612,7 +599,6 @@ section {
   transform: translateY(100%);
   transition: transform 300ms linear;
 }
-
 
 .projects-link:hover,
 .projects-link:focus {
@@ -656,7 +642,6 @@ section {
   color: var(--third-title-color);
 }
 
-
 .work-box {
   position: relative;
 }
@@ -678,7 +663,6 @@ section {
 }
 
 /*------------------------------------FOOTER-----------------*/
-
 .footer {
   padding: 60px 0;
   background-color: #2f303a;
@@ -842,12 +826,6 @@ section {
   border: 2px solid #2196F3;
 }
 
-/*.online-input:focus+.online-label,
-.online-input:not(:placeholder-shown)+.online-label {
-  color: #FFFFFF;
-
-}*/
-
 .online-label {
   display: flex;
   align-items: center;
@@ -1005,13 +983,11 @@ section {
   align-items: center;
   justify-content: center;
   padding: 0;
-
 }
 
 .close-icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 
 .close-icon:hover,
 .close-icon:focus {
