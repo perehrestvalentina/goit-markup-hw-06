@@ -795,7 +795,7 @@ section {
 
 .online-title {
   font-family: 'Roboto', sans-serif;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
@@ -836,9 +836,11 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 200px;
-  height: 50px;
   margin-left: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 40px;
+  padding-right: 52px;
 
   font-family: 'Roboto';
   font-style: normal;
@@ -863,10 +865,8 @@ section {
 }
 
 .online-icon {
-  position: absolute;
-  top: 50%;
-  right: 28px;
-  transform: translateY(-50%);
+  align-items: center;
+
 }
 
 /*-------------------------MODAL-----------------------*/
@@ -939,7 +939,8 @@ section {
   border: 1px solid #2196F3;
 }
 
-.modal-input:focus~.modal-icon {
+.modal-input:focus~.modal-icon,
+.modal-input:hover~.modal-icon {
   fill: #2196f3;
 }
 
@@ -961,7 +962,15 @@ section {
   border-radius: 4px;
   resize: none;
   outline: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.modal-text:focus,
+.modal-text:hover {
+  border: 1px solid #2196F3;
+
+}
+
 
 .modal-text::placeholder {
   font-size: 12px;
@@ -1009,7 +1018,6 @@ section {
   color: #757575;
   display: flex;
   justify-content: center;
-  margin-bottom: 30px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
